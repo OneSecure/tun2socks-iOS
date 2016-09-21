@@ -413,7 +413,7 @@ int main (int argc, char **argv)
     
     // free clients
     LinkedList1Node *node;
-    while (node = LinkedList1_GetFirst(&tcp_clients)) {
+    while ((node = LinkedList1_GetFirst(&tcp_clients))) {
         struct tcp_client *client = UPPER_OBJECT(node, struct tcp_client, list_node);
         client_murder(client);
     }
@@ -691,6 +691,7 @@ int parse_arguments (int argc, char *argv[])
 #ifdef BADVPN_SOCKS_UDP_RELAY
         else if (!strcmp(arg, "--enable-udprelay")) {
             options.udpgw_remote_server_addr = "0.0.0.0:0";
+        }
 #else
         else if (!strcmp(arg, "--udpgw-remote-server-addr")) {
             if (1 >= argc - i) {
@@ -699,13 +700,14 @@ int parse_arguments (int argc, char *argv[])
             }
             options.udpgw_remote_server_addr = argv[i + 1];
             i++;
-#endif
         }
-#ifdef BADVPN_SOCKS_UDP_RELAY
-        else if (!strcmp(arg, "--udprelay-max-connections")) {
-#else
-        else if (!strcmp(arg, "--udpgw-max-connections")) {
 #endif
+#ifdef BADVPN_SOCKS_UDP_RELAY
+        else if (!strcmp(arg, "--udprelay-max-connections"))
+#else
+        else if (!strcmp(arg, "--udpgw-max-connections"))
+#endif
+        {
             if (1 >= argc - i) {
                 fprintf(stderr, "%s: requires an argument\n", arg);
                 return 0;
@@ -1205,7 +1207,7 @@ err_t common_netif_output (struct netif *netif, struct pbuf *p)
             }
             memcpy(device_write_buf + len, p->payload, p->len);
             len += p->len;
-        } while (p = p->next);
+        } while ((p = p->next));
         
         SYNC_FROMHERE
         BTap_Send(&device, device_write_buf, len);

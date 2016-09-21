@@ -130,7 +130,7 @@ static int write_tun_header (int fd, void *buf, size_t len)
     iv[1].iov_base = buf;
     iv[1].iov_len = len;
 
-    return header_modify_read_write_return(writev(fd, iv, 2));
+    return header_modify_read_write_return((int) writev(fd, iv, 2));
 }
 
 static int read_tun_header (int fd, void *buf, size_t len)
@@ -143,7 +143,7 @@ static int read_tun_header (int fd, void *buf, size_t len)
     iv[1].iov_base = buf;
     iv[1].iov_len = len;
 
-    return header_modify_read_write_return(readv(fd, iv, 2));
+    return header_modify_read_write_return((int) readv(fd, iv, 2));
 }
 
 #endif
