@@ -40,7 +40,7 @@ struct _BTime_global btime_global = {
 #ifdef __MACH__
 #include <mach/clock.h>
 #include <mach/mach.h>
-
+#if !defined(__APPLE__)
 int clock_gettime(int clk_id, struct timespec* t)
 {
     clock_serv_t cclock;
@@ -52,4 +52,5 @@ int clock_gettime(int clk_id, struct timespec* t)
     t->tv_nsec = mts.tv_nsec;
     return 0;
 }
+#endif
 #endif

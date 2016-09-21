@@ -8,113 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		4B384FCD1B60CB0B005922AA /* BLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E181B60CB0B005922AA /* BLog.c */; };
-		4B384FCE1B60CB0B005922AA /* BLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E181B60CB0B005922AA /* BLog.c */; };
 		4B384FCF1B60CB0B005922AA /* BLog_syslog.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E1A1B60CB0B005922AA /* BLog_syslog.c */; };
-		4B384FD01B60CB0B005922AA /* BLog_syslog.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E1A1B60CB0B005922AA /* BLog_syslog.c */; };
 		4B384FD11B60CB0B005922AA /* BPending.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E1D1B60CB0B005922AA /* BPending.c */; };
-		4B384FD21B60CB0B005922AA /* BPending.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E1D1B60CB0B005922AA /* BPending.c */; };
 		4B384FD31B60CB0B005922AA /* DebugObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E201B60CB0B005922AA /* DebugObject.c */; };
-		4B384FD41B60CB0B005922AA /* DebugObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E201B60CB0B005922AA /* DebugObject.c */; };
 		4B384FD51B60CB0B005922AA /* BufferWriter.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E231B60CB0B005922AA /* BufferWriter.c */; };
-		4B384FD61B60CB0B005922AA /* BufferWriter.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E231B60CB0B005922AA /* BufferWriter.c */; };
 		4B384FD71B60CB0B005922AA /* PacketBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E251B60CB0B005922AA /* PacketBuffer.c */; };
-		4B384FD81B60CB0B005922AA /* PacketBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E251B60CB0B005922AA /* PacketBuffer.c */; };
 		4B384FD91B60CB0B005922AA /* PacketPassConnector.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E271B60CB0B005922AA /* PacketPassConnector.c */; };
-		4B384FDA1B60CB0B005922AA /* PacketPassConnector.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E271B60CB0B005922AA /* PacketPassConnector.c */; };
 		4B384FDB1B60CB0B005922AA /* PacketPassFairQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E291B60CB0B005922AA /* PacketPassFairQueue.c */; };
-		4B384FDC1B60CB0B005922AA /* PacketPassFairQueue.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E291B60CB0B005922AA /* PacketPassFairQueue.c */; };
 		4B384FDD1B60CB0B005922AA /* PacketPassInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E2C1B60CB0B005922AA /* PacketPassInterface.c */; };
-		4B384FDE1B60CB0B005922AA /* PacketPassInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E2C1B60CB0B005922AA /* PacketPassInterface.c */; };
 		4B384FDF1B60CB0B005922AA /* PacketProtoDecoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E2E1B60CB0B005922AA /* PacketProtoDecoder.c */; };
-		4B384FE01B60CB0B005922AA /* PacketProtoDecoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E2E1B60CB0B005922AA /* PacketProtoDecoder.c */; };
 		4B384FE11B60CB0B005922AA /* PacketProtoEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E301B60CB0B005922AA /* PacketProtoEncoder.c */; };
-		4B384FE21B60CB0B005922AA /* PacketProtoEncoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E301B60CB0B005922AA /* PacketProtoEncoder.c */; };
 		4B384FE31B60CB0B005922AA /* PacketProtoFlow.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E321B60CB0B005922AA /* PacketProtoFlow.c */; };
-		4B384FE41B60CB0B005922AA /* PacketProtoFlow.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E321B60CB0B005922AA /* PacketProtoFlow.c */; };
 		4B384FE51B60CB0B005922AA /* PacketRecvInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E341B60CB0B005922AA /* PacketRecvInterface.c */; };
-		4B384FE61B60CB0B005922AA /* PacketRecvInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E341B60CB0B005922AA /* PacketRecvInterface.c */; };
 		4B384FE71B60CB0B005922AA /* PacketStreamSender.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E361B60CB0B005922AA /* PacketStreamSender.c */; };
-		4B384FE81B60CB0B005922AA /* PacketStreamSender.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E361B60CB0B005922AA /* PacketStreamSender.c */; };
 		4B384FE91B60CB0B005922AA /* SinglePacketBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E381B60CB0B005922AA /* SinglePacketBuffer.c */; };
-		4B384FEA1B60CB0B005922AA /* SinglePacketBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E381B60CB0B005922AA /* SinglePacketBuffer.c */; };
 		4B384FEB1B60CB0B005922AA /* StreamPassInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E3A1B60CB0B005922AA /* StreamPassInterface.c */; };
-		4B384FEC1B60CB0B005922AA /* StreamPassInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E3A1B60CB0B005922AA /* StreamPassInterface.c */; };
 		4B384FED1B60CB0B005922AA /* StreamRecvInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E3C1B60CB0B005922AA /* StreamRecvInterface.c */; };
-		4B384FEE1B60CB0B005922AA /* StreamRecvInterface.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E3C1B60CB0B005922AA /* StreamRecvInterface.c */; };
 		4B384FEF1B60CB0B005922AA /* PacketPassInactivityMonitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E3F1B60CB0B005922AA /* PacketPassInactivityMonitor.c */; };
-		4B384FF01B60CB0B005922AA /* PacketPassInactivityMonitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384E3F1B60CB0B005922AA /* PacketPassInactivityMonitor.c */; };
 		4B384FF11B60CB0B005922AA /* sys.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE01B60CB0B005922AA /* sys.c */; };
-		4B384FF21B60CB0B005922AA /* sys.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE01B60CB0B005922AA /* sys.c */; };
 		4B384FF31B60CB0B005922AA /* def.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE31B60CB0B005922AA /* def.c */; };
-		4B384FF41B60CB0B005922AA /* def.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE31B60CB0B005922AA /* def.c */; };
 		4B384FF51B60CB0B005922AA /* inet_chksum.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE41B60CB0B005922AA /* inet_chksum.c */; };
-		4B384FF61B60CB0B005922AA /* inet_chksum.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE41B60CB0B005922AA /* inet_chksum.c */; };
 		4B384FF71B60CB0B005922AA /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE51B60CB0B005922AA /* init.c */; };
-		4B384FF81B60CB0B005922AA /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE51B60CB0B005922AA /* init.c */; };
 		4B384FF91B60CB0B005922AA /* icmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE71B60CB0B005922AA /* icmp.c */; };
-		4B384FFA1B60CB0B005922AA /* icmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE71B60CB0B005922AA /* icmp.c */; };
 		4B384FFB1B60CB0B005922AA /* ip4.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE81B60CB0B005922AA /* ip4.c */; };
-		4B384FFC1B60CB0B005922AA /* ip4.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE81B60CB0B005922AA /* ip4.c */; };
 		4B384FFD1B60CB0B005922AA /* ip4_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE91B60CB0B005922AA /* ip4_addr.c */; };
-		4B384FFE1B60CB0B005922AA /* ip4_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EE91B60CB0B005922AA /* ip4_addr.c */; };
 		4B384FFF1B60CB0B005922AA /* ip_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EEA1B60CB0B005922AA /* ip_frag.c */; };
-		4B3850001B60CB0B005922AA /* ip_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EEA1B60CB0B005922AA /* ip_frag.c */; };
 		4B3850011B60CB0B005922AA /* icmp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EEC1B60CB0B005922AA /* icmp6.c */; };
-		4B3850021B60CB0B005922AA /* icmp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EEC1B60CB0B005922AA /* icmp6.c */; };
 		4B3850031B60CB0B005922AA /* ip6.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EED1B60CB0B005922AA /* ip6.c */; };
-		4B3850041B60CB0B005922AA /* ip6.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EED1B60CB0B005922AA /* ip6.c */; };
 		4B3850051B60CB0B005922AA /* ip6_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EEE1B60CB0B005922AA /* ip6_addr.c */; };
-		4B3850061B60CB0B005922AA /* ip6_addr.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EEE1B60CB0B005922AA /* ip6_addr.c */; };
 		4B3850071B60CB0B005922AA /* ip6_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EEF1B60CB0B005922AA /* ip6_frag.c */; };
-		4B3850081B60CB0B005922AA /* ip6_frag.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EEF1B60CB0B005922AA /* ip6_frag.c */; };
 		4B3850091B60CB0B005922AA /* nd6.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF01B60CB0B005922AA /* nd6.c */; };
-		4B38500A1B60CB0B005922AA /* nd6.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF01B60CB0B005922AA /* nd6.c */; };
 		4B38500B1B60CB0B005922AA /* mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF11B60CB0B005922AA /* mem.c */; };
-		4B38500C1B60CB0B005922AA /* mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF11B60CB0B005922AA /* mem.c */; };
 		4B38500D1B60CB0B005922AA /* memp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF21B60CB0B005922AA /* memp.c */; };
-		4B38500E1B60CB0B005922AA /* memp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF21B60CB0B005922AA /* memp.c */; };
 		4B38500F1B60CB0B005922AA /* netif.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF31B60CB0B005922AA /* netif.c */; };
-		4B3850101B60CB0B005922AA /* netif.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF31B60CB0B005922AA /* netif.c */; };
 		4B3850111B60CB0B005922AA /* pbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF41B60CB0B005922AA /* pbuf.c */; };
-		4B3850121B60CB0B005922AA /* pbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF41B60CB0B005922AA /* pbuf.c */; };
 		4B3850131B60CB0B005922AA /* stats.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF51B60CB0B005922AA /* stats.c */; };
-		4B3850141B60CB0B005922AA /* stats.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF51B60CB0B005922AA /* stats.c */; };
 		4B3850151B60CB0B005922AA /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF61B60CB0B005922AA /* tcp.c */; };
-		4B3850161B60CB0B005922AA /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF61B60CB0B005922AA /* tcp.c */; };
 		4B3850171B60CB0B005922AA /* tcp_in.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF71B60CB0B005922AA /* tcp_in.c */; };
-		4B3850181B60CB0B005922AA /* tcp_in.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF71B60CB0B005922AA /* tcp_in.c */; };
 		4B3850191B60CB0B005922AA /* tcp_out.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF81B60CB0B005922AA /* tcp_out.c */; };
-		4B38501A1B60CB0B005922AA /* tcp_out.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF81B60CB0B005922AA /* tcp_out.c */; };
 		4B38501B1B60CB0B005922AA /* timers.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF91B60CB0B005922AA /* timers.c */; };
-		4B38501C1B60CB0B005922AA /* timers.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EF91B60CB0B005922AA /* timers.c */; };
 		4B38501D1B60CB0B005922AA /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EFA1B60CB0B005922AA /* udp.c */; };
-		4B38501E1B60CB0B005922AA /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384EFA1B60CB0B005922AA /* udp.c */; };
 		4B38501F1B60CB0B005922AA /* BSocksClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384F8A1B60CB0B005922AA /* BSocksClient.c */; };
-		4B3850201B60CB0B005922AA /* BSocksClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384F8A1B60CB0B005922AA /* BSocksClient.c */; };
 		4B3850211B60CB0B005922AA /* BConnection_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FB11B60CB0B005922AA /* BConnection_unix.c */; };
-		4B3850221B60CB0B005922AA /* BConnection_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FB11B60CB0B005922AA /* BConnection_unix.c */; };
 		4B3850231B60CB0B005922AA /* BDatagram_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FB41B60CB0B005922AA /* BDatagram_unix.c */; };
-		4B3850241B60CB0B005922AA /* BDatagram_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FB41B60CB0B005922AA /* BDatagram_unix.c */; };
 		4B3850251B60CB0B005922AA /* BNetwork.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FB61B60CB0B005922AA /* BNetwork.c */; };
-		4B3850261B60CB0B005922AA /* BNetwork.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FB61B60CB0B005922AA /* BNetwork.c */; };
 		4B3850271B60CB0B005922AA /* BReactor_badvpn.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FB91B60CB0B005922AA /* BReactor_badvpn.c */; };
-		4B3850281B60CB0B005922AA /* BReactor_badvpn.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FB91B60CB0B005922AA /* BReactor_badvpn.c */; };
 		4B3850291B60CB0B005922AA /* BSignal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FBC1B60CB0B005922AA /* BSignal.c */; };
-		4B38502A1B60CB0B005922AA /* BSignal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FBC1B60CB0B005922AA /* BSignal.c */; };
 		4B38502B1B60CB0B005922AA /* BTime.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FBE1B60CB0B005922AA /* BTime.c */; };
-		4B38502C1B60CB0B005922AA /* BTime.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FBE1B60CB0B005922AA /* BTime.c */; };
 		4B38502D1B60CB0B005922AA /* BUnixSignal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FC01B60CB0B005922AA /* BUnixSignal.c */; };
-		4B38502E1B60CB0B005922AA /* BUnixSignal.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FC01B60CB0B005922AA /* BUnixSignal.c */; };
 		4B38502F1B60CB0B005922AA /* SocksUdpGwClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FC31B60CB0B005922AA /* SocksUdpGwClient.c */; };
-		4B3850301B60CB0B005922AA /* SocksUdpGwClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FC31B60CB0B005922AA /* SocksUdpGwClient.c */; };
 		4B3850311B60CB0B005922AA /* tun2socks.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FC51B60CB0B005922AA /* tun2socks.c */; };
-		4B3850321B60CB0B005922AA /* tun2socks.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FC51B60CB0B005922AA /* tun2socks.c */; };
 		4B3850331B60CB0B005922AA /* BTap.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FC81B60CB0B005922AA /* BTap.c */; };
-		4B3850341B60CB0B005922AA /* BTap.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FC81B60CB0B005922AA /* BTap.c */; };
 		4B3850351B60CB0B005922AA /* UdpGwClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FCB1B60CB0B005922AA /* UdpGwClient.c */; };
-		4B3850361B60CB0B005922AA /* UdpGwClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B384FCB1B60CB0B005922AA /* UdpGwClient.c */; };
 		4B60969B1B60E2AF00DD4948 /* BConnection_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B60969A1B60E2AF00DD4948 /* BConnection_common.c */; };
-		4B60969C1B60E2AF00DD4948 /* BConnection_common.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B60969A1B60E2AF00DD4948 /* BConnection_common.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -127,20 +73,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B384E0E1B60CAC3005922AA /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B384DF21B60CA66005922AA /* liblibtun2socks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibtun2socks.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B384E101B60CAC3005922AA /* tun2socks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tun2socks; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B384DF21B60CA66005922AA /* libtun2socks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtun2socks.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B384E181B60CB0B005922AA /* BLog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BLog.c; sourceTree = "<group>"; };
 		4B384E191B60CB0B005922AA /* BLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLog.h; sourceTree = "<group>"; };
 		4B384E1A1B60CB0B005922AA /* BLog_syslog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BLog_syslog.c; sourceTree = "<group>"; };
@@ -562,20 +498,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B384E0D1B60CAC3005922AA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4B384DE91B60CA66005922AA = {
 			isa = PBXGroup;
 			children = (
-				4B384DF41B60CA66005922AA /* libtun2socks */,
+				4B384DF41B60CA66005922AA /* tun2socks */,
 				4B384DF31B60CA66005922AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -583,13 +512,12 @@
 		4B384DF31B60CA66005922AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B384DF21B60CA66005922AA /* liblibtun2socks.a */,
-				4B384E101B60CAC3005922AA /* tun2socks */,
+				4B384DF21B60CA66005922AA /* libtun2socks.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B384DF41B60CA66005922AA /* libtun2socks */ = {
+		4B384DF41B60CA66005922AA /* tun2socks */ = {
 			isa = PBXGroup;
 			children = (
 				4B384E171B60CB0B005922AA /* base */,
@@ -606,7 +534,7 @@
 				4B384FC71B60CB0B005922AA /* tuntap */,
 				4B384FCA1B60CB0B005922AA /* udpgw_client */,
 			);
-			path = libtun2socks;
+			path = tun2socks;
 			sourceTree = "<group>";
 		};
 		4B384E171B60CB0B005922AA /* base */ = {
@@ -1234,9 +1162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B384DF11B60CA66005922AA /* libtun2socks */ = {
+		4B384DF11B60CA66005922AA /* tun2socks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B384E061B60CA66005922AA /* Build configuration list for PBXNativeTarget "libtun2socks" */;
+			buildConfigurationList = 4B384E061B60CA66005922AA /* Build configuration list for PBXNativeTarget "tun2socks" */;
 			buildPhases = (
 				4B384DEE1B60CA66005922AA /* Sources */,
 				4B384DEF1B60CA66005922AA /* Frameworks */,
@@ -1246,27 +1174,10 @@
 			);
 			dependencies = (
 			);
-			name = libtun2socks;
-			productName = libtun2socks;
-			productReference = 4B384DF21B60CA66005922AA /* liblibtun2socks.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4B384E0F1B60CAC3005922AA /* tun2socks */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4B384E141B60CAC3005922AA /* Build configuration list for PBXNativeTarget "tun2socks" */;
-			buildPhases = (
-				4B384E0C1B60CAC3005922AA /* Sources */,
-				4B384E0D1B60CAC3005922AA /* Frameworks */,
-				4B384E0E1B60CAC3005922AA /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
 			name = tun2socks;
 			productName = tun2socks;
-			productReference = 4B384E101B60CAC3005922AA /* tun2socks */;
-			productType = "com.apple.product-type.tool";
+			productReference = 4B384DF21B60CA66005922AA /* libtun2socks.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -1274,18 +1185,15 @@
 		4B384DEA1B60CA66005922AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Linus Yang";
 				TargetAttributes = {
 					4B384DF11B60CA66005922AA = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					4B384E0F1B60CAC3005922AA = {
-						CreatedOnToolsVersion = 6.4;
-					};
 				};
 			};
-			buildConfigurationList = 4B384DED1B60CA66005922AA /* Build configuration list for PBXProject "libtun2socks" */;
+			buildConfigurationList = 4B384DED1B60CA66005922AA /* Build configuration list for PBXProject "tun2socks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1297,8 +1205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B384DF11B60CA66005922AA /* libtun2socks */,
-				4B384E0F1B60CAC3005922AA /* tun2socks */,
+				4B384DF11B60CA66005922AA /* tun2socks */,
 			);
 		};
 /* End PBXProject section */
@@ -1365,67 +1272,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B384E0C1B60CAC3005922AA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4B384FE21B60CB0B005922AA /* PacketProtoEncoder.c in Sources */,
-				4B384FF41B60CB0B005922AA /* def.c in Sources */,
-				4B384FDE1B60CB0B005922AA /* PacketPassInterface.c in Sources */,
-				4B3850241B60CB0B005922AA /* BDatagram_unix.c in Sources */,
-				4B3850141B60CB0B005922AA /* stats.c in Sources */,
-				4B384FFC1B60CB0B005922AA /* ip4.c in Sources */,
-				4B384FE81B60CB0B005922AA /* PacketStreamSender.c in Sources */,
-				4B384FFE1B60CB0B005922AA /* ip4_addr.c in Sources */,
-				4B384FE41B60CB0B005922AA /* PacketProtoFlow.c in Sources */,
-				4B38502C1B60CB0B005922AA /* BTime.c in Sources */,
-				4B3850361B60CB0B005922AA /* UdpGwClient.c in Sources */,
-				4B3850061B60CB0B005922AA /* ip6_addr.c in Sources */,
-				4B3850221B60CB0B005922AA /* BConnection_unix.c in Sources */,
-				4B60969C1B60E2AF00DD4948 /* BConnection_common.c in Sources */,
-				4B384FD41B60CB0B005922AA /* DebugObject.c in Sources */,
-				4B384FF01B60CB0B005922AA /* PacketPassInactivityMonitor.c in Sources */,
-				4B3850121B60CB0B005922AA /* pbuf.c in Sources */,
-				4B384FD61B60CB0B005922AA /* BufferWriter.c in Sources */,
-				4B384FF61B60CB0B005922AA /* inet_chksum.c in Sources */,
-				4B3850101B60CB0B005922AA /* netif.c in Sources */,
-				4B384FFA1B60CB0B005922AA /* icmp.c in Sources */,
-				4B384FF81B60CB0B005922AA /* init.c in Sources */,
-				4B3850301B60CB0B005922AA /* SocksUdpGwClient.c in Sources */,
-				4B384FDA1B60CB0B005922AA /* PacketPassConnector.c in Sources */,
-				4B3850001B60CB0B005922AA /* ip_frag.c in Sources */,
-				4B3850161B60CB0B005922AA /* tcp.c in Sources */,
-				4B3850181B60CB0B005922AA /* tcp_in.c in Sources */,
-				4B3850021B60CB0B005922AA /* icmp6.c in Sources */,
-				4B3850341B60CB0B005922AA /* BTap.c in Sources */,
-				4B384FD21B60CB0B005922AA /* BPending.c in Sources */,
-				4B38502A1B60CB0B005922AA /* BSignal.c in Sources */,
-				4B384FDC1B60CB0B005922AA /* PacketPassFairQueue.c in Sources */,
-				4B384FEE1B60CB0B005922AA /* StreamRecvInterface.c in Sources */,
-				4B384FD01B60CB0B005922AA /* BLog_syslog.c in Sources */,
-				4B38500C1B60CB0B005922AA /* mem.c in Sources */,
-				4B3850321B60CB0B005922AA /* tun2socks.c in Sources */,
-				4B384FEC1B60CB0B005922AA /* StreamPassInterface.c in Sources */,
-				4B384FEA1B60CB0B005922AA /* SinglePacketBuffer.c in Sources */,
-				4B38501C1B60CB0B005922AA /* timers.c in Sources */,
-				4B384FE01B60CB0B005922AA /* PacketProtoDecoder.c in Sources */,
-				4B38501E1B60CB0B005922AA /* udp.c in Sources */,
-				4B3850261B60CB0B005922AA /* BNetwork.c in Sources */,
-				4B384FE61B60CB0B005922AA /* PacketRecvInterface.c in Sources */,
-				4B3850081B60CB0B005922AA /* ip6_frag.c in Sources */,
-				4B38500E1B60CB0B005922AA /* memp.c in Sources */,
-				4B38502E1B60CB0B005922AA /* BUnixSignal.c in Sources */,
-				4B384FCE1B60CB0B005922AA /* BLog.c in Sources */,
-				4B3850041B60CB0B005922AA /* ip6.c in Sources */,
-				4B38501A1B60CB0B005922AA /* tcp_out.c in Sources */,
-				4B38500A1B60CB0B005922AA /* nd6.c in Sources */,
-				4B3850201B60CB0B005922AA /* BSocksClient.c in Sources */,
-				4B384FF21B60CB0B005922AA /* sys.c in Sources */,
-				4B3850281B60CB0B005922AA /* BReactor_badvpn.c in Sources */,
-				4B384FD81B60CB0B005922AA /* PacketBuffer.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -1442,13 +1288,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1469,13 +1318,15 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)",
 					"$(SRCROOT)/lwip/src/include",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1496,8 +1347,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -1522,13 +1375,15 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)",
 					"$(SRCROOT)/lwip/src/include",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/lwip/src/include/ipv4 $(SRCROOT)/lwip/src/include/ipv6 $(SRCROOT)/lwip/src/include $(SRCROOT)/lwip/custom";
@@ -1554,50 +1409,10 @@
 			};
 			name = Release;
 		};
-		4B384E151B60CAC3005922AA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					BADVPN_BREACTOR_BADVPN,
-					BADVPN_FREEBSD,
-					BADVPN_THREADWORK_USE_PTHREAD,
-					"BADVPN_THREAD_SAFE=1",
-					BADVPN_USE_KEVENT,
-					BADVPN_USE_SYSLOG,
-					BADVPN_LITTLE_ENDIAN,
-					BADVPN_SOCKS_UDP_RELAY,
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		4B384E161B60CAC3005922AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					BADVPN_BREACTOR_BADVPN,
-					BADVPN_FREEBSD,
-					BADVPN_THREADWORK_USE_PTHREAD,
-					"BADVPN_THREAD_SAFE=1",
-					BADVPN_USE_KEVENT,
-					BADVPN_USE_SYSLOG,
-					BADVPN_LITTLE_ENDIAN,
-					BADVPN_SOCKS_UDP_RELAY,
-					"NDEBUG=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B384DED1B60CA66005922AA /* Build configuration list for PBXProject "libtun2socks" */ = {
+		4B384DED1B60CA66005922AA /* Build configuration list for PBXProject "tun2socks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B384E041B60CA66005922AA /* Debug */,
@@ -1606,20 +1421,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B384E061B60CA66005922AA /* Build configuration list for PBXNativeTarget "libtun2socks" */ = {
+		4B384E061B60CA66005922AA /* Build configuration list for PBXNativeTarget "tun2socks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B384E071B60CA66005922AA /* Debug */,
 				4B384E081B60CA66005922AA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4B384E141B60CAC3005922AA /* Build configuration list for PBXNativeTarget "tun2socks" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4B384E151B60CAC3005922AA /* Debug */,
-				4B384E161B60CAC3005922AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

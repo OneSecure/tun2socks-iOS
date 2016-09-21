@@ -46,16 +46,16 @@
     #include <sys/stat.h>
     #include <sys/socket.h>
     #include <net/if.h>
-    #include <net/if_arp.h>
+    #include "if_arp.h"  // #include <net/if_arp.h>
     #ifdef BADVPN_LINUX
         #include <linux/if_tun.h>
     #endif
     #ifdef BADVPN_FREEBSD
         #ifdef __APPLE__
             #include <ctype.h>
-            #include <net/if_utun.h>
-            #include <sys/sys_domain.h>
-            #include <sys/kern_control.h>
+            #include "if_utun.h"  // #include <net/if_utun.h>
+            #include "sys_domain.h"  // #include <sys/sys_domain.h>
+            #include "kern_control.h"  // #include <sys/kern_control.h>
             #include <netinet/ip.h>
             #include <sys/uio.h>
         #else

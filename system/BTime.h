@@ -70,8 +70,10 @@ struct _BTime_global {
 };
 
 #ifdef __MACH__
+#if !defined(__APPLE__)
 #define CLOCK_MONOTONIC 1
 int clock_gettime(int clk_id, struct timespec* t);
+#endif
 #endif
 
 extern struct _BTime_global btime_global;
