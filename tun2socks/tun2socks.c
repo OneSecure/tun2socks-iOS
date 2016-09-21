@@ -239,6 +239,18 @@ static err_t client_sent_func (void *arg, struct tcp_pcb *tpcb, u16_t len);
 static void udpgw_client_handler_received (void *unused, BAddr local_addr, BAddr remote_addr, const uint8_t *data, int data_len);
 
 #ifdef BADVPN_LIBTSOCKS
+
+int tun2socks_main (int argc, char **argv);
+
+ss_write_tun_func ss_writeFunc = NULL;
+void *ss_ctx = NULL;
+
+int ss_tun2socks_main (int argc, char **argv, int fd, int mtu, ss_write_tun_func writeFunc, void *ctx) {
+    ss_writeFunc = writeFunc;
+    ss_ctx = ctx;
+    return tun2socks_main(argc, argv);
+}
+
 int tun2socks_main (int argc, char **argv)
 #else
 int main (int argc, char **argv)
@@ -1196,7 +1208,7 @@ err_t common_netif_output (struct netif *netif, struct pbuf *p)
         }
         
         SYNC_FROMHERE
-        BTap_Send(&device, (uint8_t *)p->payload, p->len);
+        BTap_Send(&device, (uint8_t *)p->payload, p->len, ss_writeFunc, ss_ctx);
         SYNC_COMMIT
     } else {
         int len = 0;
@@ -1210,7 +1222,7 @@ err_t common_netif_output (struct netif *netif, struct pbuf *p)
         } while ((p = p->next));
         
         SYNC_FROMHERE
-        BTap_Send(&device, device_write_buf, len);
+        BTap_Send(&device, device_write_buf, len, ss_writeFunc, ss_ctx);
         SYNC_COMMIT
     }
     
@@ -1907,5 +1919,5 @@ void udpgw_client_handler_received (void *unused, BAddr local_addr, BAddr remote
     }
     
     // submit packet
-    BTap_Send(&device, device_write_buf, packet_length);
+    BTap_Send(&device, device_write_buf, packet_length, ss_writeFunc, ss_ctx);
 }

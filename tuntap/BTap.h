@@ -182,7 +182,8 @@ int BTap_GetMTU (BTap *o);
  * @param data packet to send
  * @param data_len length of packet. Must be >=0 and <=MTU, as reported by {@link BTap_GetMTU}.
  */
-void BTap_Send (BTap *o, uint8_t *data, int data_len);
+typedef int (* btap_write_tun_func) (void *context, void *buf, size_t len);
+void BTap_Send (BTap *o, uint8_t *data, int data_len, btap_write_tun_func func, void *ctx);
 
 /**
  * Returns a {@link PacketRecvInterface} for reading packets from the device.

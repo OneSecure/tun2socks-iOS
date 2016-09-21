@@ -647,7 +647,7 @@ int BTap_GetMTU (BTap *o)
     return o->frame_mtu;
 }
 
-void BTap_Send (BTap *o, uint8_t *data, int data_len)
+void BTap_Send (BTap *o, uint8_t *data, int data_len, btap_write_tun_func func, void *ctx)
 {
     DebugObject_Access(&o->d_obj);
     DebugError_AssertNoError(&o->d_err);
@@ -689,7 +689,12 @@ void BTap_Send (BTap *o, uint8_t *data, int data_len)
 #else
     
 #ifdef __APPLE__
-    int bytes = write_tun_header(o->fd, data, data_len);
+    int bytes = 0;
+    if (func) {
+        bytes = func(ctx, data, data_len);
+    } else {
+        bytes = write_tun_header(o->fd, data, data_len);
+    }
 #else
     int bytes = write(o->fd, data, data_len);
 #endif

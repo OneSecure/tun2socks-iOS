@@ -44,3 +44,7 @@
 
 // option to override the destination addresses to give the SOCKS server
 //#define OVERRIDE_DEST_ADDR "10.111.0.2:2000"
+
+typedef int (* ss_write_tun_func) (void *context, void *buf, size_t len);
+extern int ss_tun2socks_main (int argc, char **argv, int fd, int mtu, ss_write_tun_func writeFunc, void *ctx);
+extern void stop_tun2socks();
