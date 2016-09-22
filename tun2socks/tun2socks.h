@@ -47,4 +47,4 @@
 
 typedef int (* ss_write_tun_func) (void *context, void *buf, size_t len);
 extern int ss_tun2socks_main (int argc, char **argv, int fd, int mtu, ss_write_tun_func writeFunc, void *ctx);
-extern void stop_tun2socks();
+extern void ss_tun2socks_stop();

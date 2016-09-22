@@ -238,17 +238,29 @@ static int client_socks_recv_send_out (struct tcp_client *client);
 static err_t client_sent_func (void *arg, struct tcp_pcb *tpcb, u16_t len);
 static void udpgw_client_handler_received (void *unused, BAddr local_addr, BAddr remote_addr, const uint8_t *data, int data_len);
 
+ss_write_tun_func ss_writeFunc = NULL;
+void *ss_ctx = NULL;
+int ss_fd = 0;
+int ss_mtu = 0;
+
 #ifdef BADVPN_LIBTSOCKS
 
 int tun2socks_main (int argc, char **argv);
 
-ss_write_tun_func ss_writeFunc = NULL;
-void *ss_ctx = NULL;
-
 int ss_tun2socks_main (int argc, char **argv, int fd, int mtu, ss_write_tun_func writeFunc, void *ctx) {
     ss_writeFunc = writeFunc;
     ss_ctx = ctx;
+    ss_fd = fd;
+    ss_mtu = mtu;
     return tun2socks_main(argc, argv);
+}
+
+void ss_tun2socks_stop() {
+    terminate();
+    ss_writeFunc = NULL;
+    ss_ctx = NULL;
+    ss_fd = 0;
+    ss_mtu = 0;
 }
 
 int tun2socks_main (int argc, char **argv)
@@ -269,7 +281,7 @@ int main (int argc, char **argv)
         print_help(argv[0]);
         goto fail0;
     }
-    
+
     // handle --help and --version
     if (options.help) {
         print_version();
@@ -342,11 +354,24 @@ int main (int argc, char **argv)
         BLog(BLOG_ERROR, "BSignal_Init failed");
         goto fail2;
     }
-    
+
+    if (ss_fd && ss_mtu) {
+        struct BTap_init_data init_data;
+        init_data.dev_type = BTAP_DEV_TUN ;
+        init_data.init_type = BTAP_INIT_FD;
+        init_data.init.fd.fd = ss_fd;
+        init_data.init.fd.mtu = ss_mtu;
+
+        if (!BTap_Init2(&device, &ss, init_data, device_error_handler, NULL)) {
+            BLog(BLOG_ERROR, "BTap_Init failed");
+            goto fail3;
+        }
+    } else {
     // init TUN device
     if (!BTap_Init(&device, &ss, options.tundev, device_error_handler, NULL, 1)) {
         BLog(BLOG_ERROR, "BTap_Init failed");
         goto fail3;
+    }
     }
     
     // NOTE: the order of the following is important:
@@ -1176,7 +1201,10 @@ err_t netif_init_func (struct netif *netif)
     netif->name[1] = 'o';
     netif->output = netif_output_func;
     netif->output_ip6 = netif_output_ip6_func;
-    
+    if (ss_mtu) {
+        netif->mtu = ss_mtu;
+    }
+
     return ERR_OK;
 }
 
