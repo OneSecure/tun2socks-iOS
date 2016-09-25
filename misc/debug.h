@@ -95,6 +95,7 @@
 #include <stdint.h>
 #include <assert.h>
 
+#undef DEBUG
 #define DEBUG(...) \
     { \
         fprintf(stderr, "%s: ", __FUNCTION__); \
